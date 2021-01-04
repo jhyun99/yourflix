@@ -35,3 +35,32 @@ a {
     color: white;
     text-decoration: none;
 }
+
+/* Scrollbar: */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000000;
+    border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555555;
+    border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888888;
+}
+
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
