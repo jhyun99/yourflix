@@ -8,7 +8,7 @@ class MainPage extends Component{
         return (
             <HeaderComponent className="logo">
                 <div className="logotop">
-                    <img src={logo}  alt=""/>
+                    <img src={logo}  alt="Netflix Logo" style={{"width": "100vw", "height": "100vh"}}/>
                     <NavLink className="signInButton" to="/login">Sign In</NavLink>
                 </div>
             </HeaderComponent>
