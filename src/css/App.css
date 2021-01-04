@@ -1,3 +1,16 @@
+body, html {
+    scroll-behavior: smooth;
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Global */
 :root{
     --main-red: rgba(211, 9, 19);
