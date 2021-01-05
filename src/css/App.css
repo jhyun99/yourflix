@@ -13,10 +13,10 @@ body, html {
 
 /* Global */
 :root{
-    --main-red: rgba(211, 9, 19, 0);
+    --main-red: rgb(211, 9, 19);
     --main-dark: rgba(20, 20, 20, 0);
-    --main-deep-dark: rgba(0, 0, 0, 0);
-    --main-grey: rgba(153, 153, 153, 0);
+    --main-deep-dark: rgb(0, 0, 0);
+    --main-grey: rgb(153, 153, 153);
 }
 
 /* All */
@@ -29,6 +29,8 @@ body{
     -webkit-font-smoothing: antialiased;
     background: var(--main-dark);
     color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 a {
@@ -58,9 +60,4 @@ a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #888888;
-}
-
-body {
-    overflow-y: auto;
-    overflow-x: hidden;
 }
