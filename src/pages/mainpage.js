@@ -12,6 +12,9 @@ class MainPage extends Component{
                     <Logo src={logo}  alt="Netflix Logo" style={{"width": "10.5vw", "height": "12.5vh"}}/>
                     <NavLink className="signInButton" to="/login">Sign In</NavLink>
                 </div>
+                <div id="background">
+
+                </div>
             </HeaderComponent>
         )
     }

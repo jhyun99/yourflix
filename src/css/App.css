@@ -64,13 +64,13 @@ a {
 
 /* Header */
 .headerSection {
-    width: 100vw;
-    height: 90vh;
-    position: relative;
-    background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)),
-    url(../images/background.jpg);
 }
 
-/* After header */
-.headerSection::after {
+.headerSection #background{
+    background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)),
+    url(../images/background.jpg); 
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+    filter: blur(8px);
 }
