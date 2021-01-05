@@ -8,11 +8,14 @@ class MainPage extends Component{
     render() {
         return (
             <HeaderComponent className="headerSection">
-                <div id="background">
-                </div>
                 <div className="logoTop">
                     <Logo src={logo}  alt="Netflix Logo" style={{"width": "10.5vw", "height": "12.5vh"}}/>
                     <NavLink className="signInButton" to="/login">Sign In</NavLink>
+                </div>
+                <div className="headerTopText">
+                    <Top1>Unlimited movies, TV<br></br> shows, and more.</Top1>
+                    <Top2>Watch anywhere. Cancel anytime.</Top2>
+                    <button className="GSButton">Get Started</button>
                 </div>
             </HeaderComponent>
         )
@@ -49,13 +52,42 @@ const HeaderComponent = styled.div`
     }
 
     .logoTop {
-        position: absolute;
-        top: 8%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
+        position: relative;
         height: 10rem;
-        width: 80%;
-        padding: 20px;
+        z-index: 2;
     }
+
+    .headerTopText {
+        width: 65%;
+        position: relative;
+        margin: 4.5rem auto 0;
+        display: flex;
+        z-index: 2;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .GSButton {
+        display: inline-block:
+        background-color: rgb(211, 9, 19);
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+    }
+`;
+
+const Top1 = styled.h1`
+    margin: 0 0 1.2rem;
+    font-size: 4rem;
+    font-weight: 680; 
+    line-height: 1em;
+`;
+
+const Top2 = styled.h2`
+    margin: 0 0 1.2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1em;
 `;
