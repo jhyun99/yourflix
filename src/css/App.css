@@ -61,3 +61,17 @@ a {
 ::-webkit-scrollbar-thumb:hover {
     background: #888888;
 }
+
+/* Header */
+.headerSection {
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)),
+    url(../images/background.jpg);
+}
+
+/* After header */
+.headerSection::after {
+
+}

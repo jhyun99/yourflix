@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../images/logo.png';
 import styled from 'styled-components';
+
+import logo from '../images/logo.png';
 
 class MainPage extends Component{
     render() {
         return (
-            <HeaderComponent className="logo">
-                <div className="logotop">
+            <HeaderComponent className="headerSection">
+                <div className="logoTop">
                     <Logo src={logo}  alt="Netflix Logo" style={{"width": "10.5vw", "height": "12.5vh"}}/>
                     <NavLink className="signInButton" to="/login">Sign In</NavLink>
                 </div>
@@ -18,7 +19,7 @@ class MainPage extends Component{
 
 export default MainPage;
 
-//Logo properties
+/* Logo */
 const Logo = styled.img`
     width: 10rem;
     height: 3.5rem;
@@ -28,7 +29,7 @@ const Logo = styled.img`
     transform: translate(-50%, -50%);
 `;
 
-//Entire header of logo/sign in button
+/*  Entire header of logo/sign in button */
 const HeaderComponent = styled.div`
     .signInButton{
         right: 0;
@@ -45,7 +46,7 @@ const HeaderComponent = styled.div`
         transition: background 0.2s ease-in;
     }
 
-    .logotop {
+    .logoTop {
         position: relative;
         height: 10rem;
     }
