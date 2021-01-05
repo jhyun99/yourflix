@@ -8,12 +8,11 @@ class MainPage extends Component{
     render() {
         return (
             <HeaderComponent className="headerSection">
+                <div id="background">
+                </div>
                 <div className="logoTop">
                     <Logo src={logo}  alt="Netflix Logo" style={{"width": "10.5vw", "height": "12.5vh"}}/>
                     <NavLink className="signInButton" to="/login">Sign In</NavLink>
-                </div>
-                <div id="background">
-
                 </div>
             </HeaderComponent>
         )
@@ -50,7 +49,13 @@ const HeaderComponent = styled.div`
     }
 
     .logoTop {
-        position: relative;
+        position: absolute;
+        top: 8%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
         height: 10rem;
+        width: 80%;
+        padding: 20px;
     }
 `;
