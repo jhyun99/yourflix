@@ -13,10 +13,10 @@ body, html {
 
 /* Global */
 :root{
-    --main-red: rgb(211, 9, 19);
-    --main-dark: rgba(20, 20, 20, 0);
-    --main-deep-dark: rgb(0, 0, 0);
-    --main-grey: rgb(153, 153, 153);
+    --red: rgb(211, 9, 19);
+    --dark: rgba(20, 20, 20, 0);
+    --deep-dark: rgb(0, 0, 0);
+    --grey: rgb(153, 153, 153);
 }
 
 /* All */
@@ -27,7 +27,7 @@ body, html {
 body{
     font-family: 'Helvetica';
     -webkit-font-smoothing: antialiased;
-    background: var(--main-dark);
+    background: var(--dark);
     color: white;
     overflow-y: auto;
     overflow-x: hidden;
@@ -78,7 +78,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.5);
     box-shadow: inset 4rem 3rem 12rem black, -4rem -3rem -12rem;
 }
 

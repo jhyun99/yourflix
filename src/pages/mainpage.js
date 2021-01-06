@@ -15,7 +15,11 @@ class MainPage extends Component{
                 <div className="headerTopText">
                     <Top1>Unlimited movies, TV<br></br> shows, and more.</Top1>
                     <Top2>Watch anywhere. Cancel anytime.</Top2>
-                    <button className="GSButton">Get Started</button>
+                    <Top3><br></br>Ready to watch? Enter your email to create or restart your membership.</Top3>
+                    <div className="inputGroup">
+                    <input class="emailForm" type="email" minLength="5" maxLength="50"/>
+                    <button className="getStartedButton" to="/registration">GET STARTED</button>
+                    </div>
                 </div>
             </HeaderComponent>
         )
@@ -44,7 +48,7 @@ const HeaderComponent = styled.div`
         line-height: normal;
         border-radius: 0.1875rem;
         font-size: 1rem;
-        background: var(--main-red);
+        background: var(--red);
         position: absolute;
         translate: transform(-50%, -50%);
         cursor: PointerEvent;
@@ -69,12 +73,38 @@ const HeaderComponent = styled.div`
         flex-direction: column;
     }
 
-    .GSButton {
-        display: inline-block:
-        background-color: rgb(211, 9, 19);
+    .inputGroup {
+        display: flex;
+        justify-content: center;
+    }
+
+    .emailForm {
+        display: inline-block;
+        height: 4.185rem;
+        width: 30rem;
+        border: none;
+        outline: none;
+    }
+
+    .getStartedButton {
+        display: inline-block;
+        background: var(--red);
+        color: white;
         text-transform: uppercase;
         border: none;
         outline: none;
+        height: 4.2rem;
+        width: 18rem;
+        border: 1px var(--red);
+        font-size: 1.9rem;
+        text-align: center;
+        transition: background .2s ease-in;
+        cursor: pointer;
+    }
+
+    .getStartButton:hover {
+        background-color: var(--dark);
+        color: white;
     }
 `;
 
@@ -82,12 +112,19 @@ const Top1 = styled.h1`
     margin: 0 0 1.2rem;
     font-size: 4rem;
     font-weight: 680; 
-    line-height: 1em;
+    line-height: 1.15em;
 `;
 
 const Top2 = styled.h2`
     margin: 0 0 1.2rem;
-    font-size: 1.8rem;
+    font-size: 1.7em;
     font-weight: 500;
+    line-height: 1em;
+`;
+
+const Top3 = styled.h3`
+    margin: 0 0 1.2rem;
+    font-size: 1.5;
+    font-weight: 400;
     line-height: 1em;
 `;
