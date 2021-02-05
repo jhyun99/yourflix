@@ -13,11 +13,11 @@ class MainPage extends Component{
                     <NavLink className="signInButton" to="/login">Sign In</NavLink>
                 </div>
                 <div className="headerTopText">
-                    <Top1>Unlimited movies, TV<br></br> shows, and more.</Top1>
+                    <Top1>Unlimited movies, TV<br/> shows and more.</Top1>
                     <Top2>Watch anywhere. Cancel anytime.</Top2>
-                    <Top3><br></br>Ready to watch? Enter your email to create or restart your membership.</Top3>
+                    <Top3><br/>Ready to watch? Enter your email to create or restart your membership.</Top3>
                     <div className="inputGroup">
-                    <input class="emailForm" type="email" minLength="5" maxLength="50"/>
+                    <input className="emailForm" type="email" minLength="5" maxLength="50"/>
                     <button className="getStartedButton" to="/registration">GET STARTED</button>
                     </div>
                 </div>
