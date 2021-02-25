@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import logo from '../images/logo.png';
 
-class MainPage extends Component{
+class MainPage extends Component {
     render() {
         return (
             <HeaderComponent className="headerSection">
