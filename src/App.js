@@ -1,7 +1,7 @@
 import './css/App.css';
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import MainPage from './pages/mainpage.js';
+import MainPage from './pages/MainPage.js';
 import LoginPage from "./pages/LoginPage";
 
 const App = () => {
