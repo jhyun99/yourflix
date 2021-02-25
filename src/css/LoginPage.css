@@ -21,9 +21,3 @@
     background: rgba(0,0,0,0.5);
     box-shadow: inset 4rem 3rem 12rem black, -4rem -3rem -12rem;
 }
-
-.logoTop {
-    position: relative;
-    height: 10rem;
-    z-index: 2;
-}
