@@ -29,11 +29,21 @@ class LoginPage extends Component {
         this.setState(oldState);
     }
 
-    signIn() {
+    signIn(e) {
+        e.preventDefault();
+
         let emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
         let numberPattern = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
 
         let passwordPattern = /[a-zA-Z0-9.!@#$%^&*_]{4,60}/;
+
+        if(!emailPattern.test(this.state.input) && !numberPattern.test(this.state.input)) {
+            //TODO: Display error message for bad input
+        }
+
+        if(!passwordPattern.test(this.state.password)) {
+            //TODO: Display error message for bad password
+        }
     }
 
     render() {
@@ -47,7 +57,7 @@ class LoginPage extends Component {
                     <form>
                         <input type="text" onChange={(e) => this.inputChangeHandler(e)} defaultValue="Email or phone number"/>
                         <input type="text" onChange={(e) => this.passwordChangeHandler(e)} defaultValue="Password"/>
-                        <button onClick={() => this.signIn()}>Sign in</button>
+                        <button onClick={(e) => this.signIn(e)}>Sign in</button>
                         <input type="checkbox" id="rememberMe" />
                         <label htmlFor="rememberMe">Remember me</label>
                     </form>
