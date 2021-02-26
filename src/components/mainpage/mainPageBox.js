@@ -8,8 +8,10 @@ class MainPageBox extends Component {
           <div>
               <div className="mainPageBox">
                 <div className="card">
-                  <h1 className="card-title">Enjoy on your TV.</h1>
-                  <h2 className="card-text">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h2>
+                  <div className="card-contents">
+                    <h1 className="card-title">Enjoy on your TV.</h1>
+                    <h2 className="card-text">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h2>
+                  </div>
                   <img className="card-image" src={tv} alt="tv"/>
                 </div>
               </div>
