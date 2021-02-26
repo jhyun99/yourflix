@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import logo from '../images/logo.png';
 
-class MainPage extends Component{
+class MainPage extends Component {
     render() {
         return (
             <HeaderComponent className="headerSection">
@@ -17,8 +17,10 @@ class MainPage extends Component{
                     <Top2>Watch anywhere. Cancel anytime.</Top2>
                     <Top3><br/>Ready to watch? Enter your email to create or restart your membership.</Top3>
                     <div className="inputGroup">
-                    <input className="emailForm" type="email" minLength="5" maxLength="50"/>
-                    <button className="getStartedButton" to="/registration">GET STARTED</button>
+                    <input className="emailForm" defaultValue="Email address" type="email" minLength="5" maxLength="50"/>
+                    <button className="getStartedButton" to="/registration">
+                        Get Started
+                    </button>
                     </div>
                 </div>
             </HeaderComponent>
@@ -79,6 +81,9 @@ const HeaderComponent = styled.div`
     }
 
     .emailForm {
+        font-size: 1rem;
+        color: gray;
+        padding: 10px;
         display: inline-block;
         height: 4.185rem;
         width: 30rem;
@@ -90,7 +95,6 @@ const HeaderComponent = styled.div`
         display: inline-block;
         background: var(--red);
         color: white;
-        text-transform: uppercase;
         border: none;
         outline: none;
         height: 4.2rem;
