@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
 
+import tv from "../../images/tv.png";
+
 class MainPageBox extends Component {
     render() {
         return (
           <div>
               <div className="mainPageBox">
-                <p>hi. this is a placeholder.</p>
-                <p>hi. this is a placeholder.</p>
-                <p>hi. this is a placeholder.</p>
-                <p>hi. this is a placeholder.</p>
+                <div className="card">
+                  <div className="card-contents">
+                    <h1 className="card-title">Enjoy on your TV.</h1>
+                    <h2 className="card-text">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h2>
+                  </div>
+                  <img className="card-image" src={tv} alt="tv"/>
+                </div>
               </div>
           </div>  
         )
