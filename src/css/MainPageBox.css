@@ -37,3 +37,49 @@
 .mainPageBox .card .card-image {
     display: flex;
 }
+
+.faq-box {
+    position: relative;
+    border-bottom: 8px solid #222;
+    padding: 50px 5%;
+    margin-bottom: 0;
+    background: 0 0;
+    color: #fff;
+}
+
+.faq-box .faq-card {
+    text-align: center;
+}
+
+.faq-box .faq-title {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: .5rem;
+}
+
+.faq-box .faq-list {
+    width: 75%;
+    margin: 2em auto;
+}
+
+.faq-box .faq-list .faq-list-item {
+    list-style-type: none;
+    margin: 0 0 8px 0;
+}
+
+.faq-list-item .faq-question {
+    display: block;
+    text-align: left;
+    background: #303030;
+    padding: .8em 2.2em .8em 1.2em;
+    margin-bottom: 1px;
+    font-weight: 400;
+    position: relative;
+    width: 100%;
+    border: 0;
+    text-transform: none;
+    overflow: visible;
+    outline: none;
+    font-size: 16px;
+    color: white;
+}
