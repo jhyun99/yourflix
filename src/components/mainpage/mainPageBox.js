@@ -45,7 +45,43 @@ class MainPageBox extends Component {
                     </button>
                     <div className="faq-closed"></div>
                   </li>
+                  <li className="faq-list-item">
+                    <button className="faq-question">
+                      How much does Netflix cost?
+                    </button>
+                    <div className="faq-closed"></div>
+                  </li>
+                  <li className="faq-list-item">
+                    <button className="faq-question">
+                      Where can I watch?
+                    </button>
+                    <div className="faq-closed"></div>
+                  </li>
+                  <li className="faq-list-item">
+                    <button className="faq-question">
+                      How do I cancel?
+                    </button>
+                    <div className="faq-closed"></div>
+                  </li>
+                  <li className="faq-list-item">
+                    <button className="faq-question">
+                      What can I watch on Netflix?
+                    </button>
+                    <div className="faq-closed"></div>
+                  </li>
                 </ul>
+                </div>
+                <h3 className="top3" style={{"textAlign":"center"}}><br/>Ready to watch? Enter your email to create or restart your membership.</h3>
+                    <div className="inputGroup">
+                    <input className="emailForm" defaultValue="Email address" type="email" minLength="5" maxLength="50"/>
+                    <button className="getStartedButton" to="/registration">
+                        Get Started
+                    </button>
+                </div>
+              </div>
+              <div className="mainPageBox no-bottom">
+                <div className="footer-card">
+                  <p className="footer-top">Questions? Call 1-111-111-1111</p>
                 </div>
               </div>
           </div>  
