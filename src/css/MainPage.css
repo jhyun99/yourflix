@@ -34,8 +34,9 @@
     font-size: 1rem;
     background: var(--red);
     position: absolute;
-    translate: transform(-50%, -50%);
-    cursor: PointerEvent;
+    /*TODO: Do we need transform?*/
+    /*transform: translate(-50%, -50%);*/
+    cursor: pointer;
     transition: background 0.2s ease-in;
 }
 
@@ -121,7 +122,8 @@
 
 .top3 {
     margin: 0 0 1.2rem;
-    font-size: 1.5;
+    /*TODO: 1.5 what? Not sure the unit here!*/
+    /*font-size: 1.5;*/
     font-weight: 400;
     line-height: 1em;
 }
