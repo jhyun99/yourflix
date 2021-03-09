@@ -3,6 +3,13 @@ import React, { Component } from 'react';
 import tv from "../../images/tv.png";
 import cardTwo from "../../images/cardTwo.jpg";
 import cardThree from "../../images/cardThree.png";
+import plus from "../../images/plus-thin.png";
+
+// <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+//
+
+
+// <span className="glyphicon glyphicon-plus"></span>
 
 class MainPageBox extends Component {
     render() {
@@ -42,30 +49,35 @@ class MainPageBox extends Component {
                   <li className="faq-list-item">
                     <button className="faq-question">
                       What is Netflix?
+                        <img className="plusImage" src={plus} alt="plus" />
                     </button>
                     <div className="faq-closed"></div>
                   </li>
                   <li className="faq-list-item">
                     <button className="faq-question">
                       How much does Netflix cost?
+                        <img className="plusImage" src={plus} alt="plus" />
                     </button>
                     <div className="faq-closed"></div>
                   </li>
                   <li className="faq-list-item">
                     <button className="faq-question">
                       Where can I watch?
+                        <img className="plusImage" src={plus} alt="plus" />
                     </button>
                     <div className="faq-closed"></div>
                   </li>
                   <li className="faq-list-item">
                     <button className="faq-question">
                       How do I cancel?
+                        <img className="plusImage" src={plus} alt="plus" />
                     </button>
                     <div className="faq-closed"></div>
                   </li>
                   <li className="faq-list-item">
                     <button className="faq-question">
                       What can I watch on Netflix?
+                        <img className="plusImage" src={plus} alt="plus" />
                     </button>
                     <div className="faq-closed"></div>
                   </li>
